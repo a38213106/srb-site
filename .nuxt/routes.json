@@ -1,73 +1,73 @@
 [
   {
     "path": "/about",
-    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about.vue",
+    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
     "children": [
       {
         "name": "about",
         "path": "",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\index.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\index.vue",
         "chunkName": "pages/about/index"
       },
       {
         "name": "about-detail",
         "path": "detail",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\detail.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\detail.vue",
         "chunkName": "pages/about/detail"
       },
       {
         "name": "about-job",
         "path": "job",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\job.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\job.vue",
         "chunkName": "pages/about/job"
       },
       {
         "name": "about-leader",
         "path": "leader",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\leader.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\leader.vue",
         "chunkName": "pages/about/leader"
       },
       {
         "name": "about-notice",
         "path": "notice",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\notice.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\notice.vue",
         "chunkName": "pages/about/notice"
       },
       {
         "name": "about-partner",
         "path": "partner",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\partner.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\partner.vue",
         "chunkName": "pages/about/partner"
       },
       {
         "name": "about-policy",
         "path": "policy",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\policy.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\policy.vue",
         "chunkName": "pages/about/policy"
       },
       {
         "name": "about-price",
         "path": "price",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\price.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\price.vue",
         "chunkName": "pages/about/price"
       },
       {
         "name": "about-profile",
         "path": "profile",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\profile.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\profile.vue",
         "chunkName": "pages/about/profile"
       },
       {
         "name": "about-report",
         "path": "report",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\report.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\report.vue",
         "chunkName": "pages/about/report"
       },
       {
         "name": "about-team",
         "path": "team",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\about\\\\team.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\about\\\\team.vue",
         "chunkName": "pages/about/team"
       }
     ]
@@ -75,66 +75,66 @@
   {
     "name": "help",
     "path": "/help",
-    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\help.vue",
+    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\help.vue",
     "chunkName": "pages/help"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\login.vue",
+    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\login.vue",
     "chunkName": "pages/login"
   },
   {
     "name": "register",
     "path": "/register",
-    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\register.vue",
+    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\register.vue",
     "chunkName": "pages/register"
   },
   {
     "path": "/user",
-    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\user.vue",
+    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user.vue",
     "chunkName": "pages/user",
     "children": [
       {
         "name": "user",
         "path": "",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\user\\\\index.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\index.vue",
         "chunkName": "pages/user/index"
       },
       {
         "name": "user-apply",
         "path": "apply",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\user\\\\apply.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\apply.vue",
         "chunkName": "pages/user/apply"
       },
       {
         "name": "user-bind",
         "path": "bind",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\user\\\\bind.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\bind.vue",
         "chunkName": "pages/user/bind"
       },
       {
         "name": "user-borrower",
         "path": "borrower",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\user\\\\borrower.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\borrower.vue",
         "chunkName": "pages/user/borrower"
       },
       {
         "name": "user-fund",
         "path": "fund",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\user\\\\fund.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\fund.vue",
         "chunkName": "pages/user/fund"
       },
       {
         "name": "user-recharge",
         "path": "recharge",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\user\\\\recharge.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\recharge.vue",
         "chunkName": "pages/user/recharge"
       },
       {
         "name": "user-withdraw",
         "path": "withdraw",
-        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\user\\\\withdraw.vue",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\withdraw.vue",
         "chunkName": "pages/user/withdraw"
       }
     ]
@@ -142,7 +142,7 @@
   {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site\\\\pages\\\\index.vue",
+    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]
