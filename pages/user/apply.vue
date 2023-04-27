@@ -80,7 +80,7 @@
       </div>
 
       <div v-if="active === 1">
-        <div style="margin-top:40px;">
+        <div style="margin-top: 40px">
           <el-alert
             title="您的借款申请已成功提交，请耐心等待"
             type="warning"
@@ -93,7 +93,7 @@
       </div>
 
       <div v-if="active === 2">
-        <div style="margin-top:40px;">
+        <div style="margin-top: 40px">
           <el-alert
             v-if="borrowInfoStatus === 2"
             title="您的借款申请审批已通过"
@@ -119,19 +119,64 @@
 
 <script>
 export default {
+  //监控某个表单的值,val是最新的值
+  watch: {
+    "borrowInfo.amount"(val) {
+      if (val > this.borrowAmount) {
+        this.$message.warning("超过可用借款额度");
+        this.borrowInfo.amount = this.borrowAmount;
+      }
+    },
+  },
   data() {
     return {
       active: 0, //步骤
       borrowInfoStatus: null, //审批状态
       //借款申请
       borrowInfo: {
-        borrowYearRate: '12',
+        borrowYearRate: "12",
       },
       borrowAmount: 0, //借款额度
       submitBtnDisabled: false,
       returnMethodList: [], //还款方式列表
       moneyUseList: [], //资金用途列表
-    }
+    };
   },
-}
+  created() {
+    this.initSelected();
+  },
+  mounted() {
+    this.getBorrowrAmount();
+  },
+  methods: {
+    getBorrowrAmount() {
+      let json = localStorage.getItem("userInfo");
+      let token;
+      if (json) {
+        token = JSON.parse(json).token;
+      }
+      this.$axios({
+        url: `web/core/integralGrade/auth/findBorrowerAmount`,
+        method: "get",
+        headers: { token },
+      }).then((r) => {
+        this.borrowAmount = r.data.data.amount;
+      });
+    },
+    initSelected() {
+      this.$axios({
+        url: `web/core/userDict/getDictList/returnMethod`,
+        method: "get",
+      }).then((r) => {
+        this.returnMethodList = r.data.data.items;
+      });
+      this.$axios({
+        url: `web/core/userDict/getDictList/moneyUse`,
+        method: "get",
+      }).then((r) => {
+        this.moneyUseList = r.data.data.items;
+      });
+    },
+  },
+};
 </script>

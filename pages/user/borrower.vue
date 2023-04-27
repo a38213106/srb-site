@@ -219,8 +219,9 @@
             title="您的认证审批已通过"
             type="success"
             show-icon
-            :closable="false"
+            :closable="false" 
           >
+          <el-button type="success" size="mini" @click="handleApply">立即借款</el-button>
           </el-alert>
 
           <el-alert
@@ -274,6 +275,9 @@ export default {
     this.getStatus();
   },
   methods: {
+    handleApply(){
+        this.$router.push("/user/apply")
+    },
     
     getStatus() {
       let json = localStorage.getItem("userInfo");
