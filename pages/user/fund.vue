@@ -20,8 +20,7 @@
           <li
             v-for="transFlow in transFlowList"
             :key="transFlow.id"
-            style="width:100%"
-          >
+            style="width:100%">
             <span class="pmain-title1 pmain-height" style="width: 150px;">
               {{ transFlow.createTime }}
             </span>
@@ -29,14 +28,14 @@
               {{ transFlow.transTypeName }}
             </span>
             <span class="pmain-title3 pmain-height" style="width: 100px;">
-              {{ transFlow.transAmount }}
+              {{ transFlow.transAmount }}元
             </span>
             <span
               :title="transFlow.memo"
               class="pmain-title1 pmain-height"
               style="width: 500px; overflow: hidden;"
             >
-              {{ transFlow.memo }}
+              {{ transFlow.memo }}元
             </span>
           </li>
         </ul>
@@ -58,7 +57,22 @@ export default {
   },
 
   methods: {
-    fetchTransFlowList() {},
+    fetchTransFlowList() {
+      let str = localStorage.getItem("userInfo");
+      let userInfo = JSON.parse(str);
+      if (!userInfo) {
+        this.$message.warning("请登录后进行查看");
+        return;
+      }
+      let token = userInfo.token;
+      this.$axios({
+        url: "web/core/TransFlow/auth/list",
+        method: "get",
+        headers: { token },
+      }).then((r) => {
+          this.transFlowList=r.data.data.items;
+      });
+    },
   },
 }
 </script>

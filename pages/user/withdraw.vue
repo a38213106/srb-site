@@ -59,6 +59,12 @@ export default {
 
   methods: {
     commitWithdraw() {
+       let json = localStorage.getItem("userInfo");
+      if (!json) {
+        this.$message.warn("登陆状态已失效，请重新登录!");
+        return;
+      }
+      let userInfo = JSON.parse(json);
       this.$alert(
         '<div style="size: 18px;color: red;">您即将前往汇付宝提现</div>',
         '前往汇付宝资金托管平台',
@@ -67,7 +73,15 @@ export default {
           confirmButtonText: '立即前往',
           callback: (action) => {
             if (action === 'confirm') {
-              //提现
+                 this.$axios({
+              url: "web/core/userAccount/auth/withDraw",
+              method: "post",
+              //因为fetchAmt是普通类型，要转为JSON对象，加大括号和KEY
+              params: {'amount':this.fetchAmt},
+              headers: { token: userInfo.token },
+            }).then((r) => {
+              document.write(r.data.data.form); //浏览器会自动执行FORM表单，提交给付汇宝
+            });
             }
           },
         }

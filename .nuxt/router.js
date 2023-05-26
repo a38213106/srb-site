@@ -17,6 +17,7 @@ const _4f1590a8 = () => interopDefault(import('..\\pages\\about\\profile.vue' /*
 const _ca8ba6fe = () => interopDefault(import('..\\pages\\about\\report.vue' /* webpackChunkName: "pages/about/report" */))
 const _5bc9866a = () => interopDefault(import('..\\pages\\about\\team.vue' /* webpackChunkName: "pages/about/team" */))
 const _a2d95d9e = () => interopDefault(import('..\\pages\\help.vue' /* webpackChunkName: "pages/help" */))
+const _61cb6fc3 = () => interopDefault(import('..\\pages\\lend\\index.vue' /* webpackChunkName: "pages/lend/index" */))
 const _72a868a9 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
 const _cb86f8da = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
 const _6477ce8a = () => interopDefault(import('..\\pages\\user.vue' /* webpackChunkName: "pages/user" */))
@@ -25,8 +26,11 @@ const _bbae9ffa = () => interopDefault(import('..\\pages\\user\\apply.vue' /* we
 const _59edfbb8 = () => interopDefault(import('..\\pages\\user\\bind.vue' /* webpackChunkName: "pages/user/bind" */))
 const _5b6c60dd = () => interopDefault(import('..\\pages\\user\\borrower.vue' /* webpackChunkName: "pages/user/borrower" */))
 const _743d7640 = () => interopDefault(import('..\\pages\\user\\fund.vue' /* webpackChunkName: "pages/user/fund" */))
+const _13280eb0 = () => interopDefault(import('..\\pages\\user\\invest.vue' /* webpackChunkName: "pages/user/invest" */))
+const _0d1c075b = () => interopDefault(import('..\\pages\\user\\payment.vue' /* webpackChunkName: "pages/user/payment" */))
 const _3680a7a2 = () => interopDefault(import('..\\pages\\user\\recharge.vue' /* webpackChunkName: "pages/user/recharge" */))
 const _17d04a85 = () => interopDefault(import('..\\pages\\user\\withdraw.vue' /* webpackChunkName: "pages/user/withdraw" */))
+const _09e886eb = () => interopDefault(import('..\\pages\\lend\\_id.vue' /* webpackChunkName: "pages/lend/_id" */))
 const _adfe74dc = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -98,6 +102,10 @@ export const routerOptions = {
     component: _a2d95d9e,
     name: "help"
   }, {
+    path: "/lend",
+    component: _61cb6fc3,
+    name: "lend"
+  }, {
     path: "/login",
     component: _72a868a9,
     name: "login"
@@ -129,6 +137,14 @@ export const routerOptions = {
       component: _743d7640,
       name: "user-fund"
     }, {
+      path: "invest",
+      component: _13280eb0,
+      name: "user-invest"
+    }, {
+      path: "payment",
+      component: _0d1c075b,
+      name: "user-payment"
+    }, {
       path: "recharge",
       component: _3680a7a2,
       name: "user-recharge"
@@ -137,6 +153,10 @@ export const routerOptions = {
       component: _17d04a85,
       name: "user-withdraw"
     }]
+  }, {
+    path: "/lend/:id",
+    component: _09e886eb,
+    name: "lend-id"
   }, {
     path: "/",
     component: _adfe74dc,

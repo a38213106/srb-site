@@ -142,13 +142,51 @@ export default {
       moneyUseList: [], //资金用途列表
     };
   },
-  created() {
-    this.initSelected();
-  },
+  created() {},
   mounted() {
-    this.getBorrowrAmount();
+     this.getStatus();
   },
   methods: {
+    getStatus() {
+      let json = localStorage.getItem("userInfo");
+      let token;
+      if (json) {
+        token = JSON.parse(json).token;
+      }
+      this.$axios({
+        url: `web/core/borrowerInfo/auth/getBorrowerStatus`,
+        method: "get",
+        headers: { token },
+      }).then((r) => {
+        this.borrowInfoStatus = r.data.data.status;
+        if (this.borrowInfoStatus === 0) {
+          this.active = 0;
+          this.initSelected();
+          this.getBorrowrAmount();
+        } else if (this.borrowInfoStatus === 1) {
+          this.active = 1;
+        } else {
+          this.active = 2;
+        }
+      });
+    },
+    save() {
+      let json = localStorage.getItem("userInfo");
+      let token;
+      if (json) {
+        token = JSON.parse(json).token;
+      }
+      this.$axios({
+        url: `web/core/borrowerInfo/auth/saveBorrowerAmountInfo`,
+        method: "post",
+        data: this.borrowInfo,
+        headers:{token}
+      }).then((r) => {
+        this.submitBtnDisabled = true;
+        this.$message.success("借款申请成功");
+        this.active = 1;
+      });
+    },
     getBorrowrAmount() {
       let json = localStorage.getItem("userInfo");
       let token;

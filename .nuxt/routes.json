@@ -79,6 +79,12 @@
     "chunkName": "pages/help"
   },
   {
+    "name": "lend",
+    "path": "/lend",
+    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\lend\\\\index.vue",
+    "chunkName": "pages/lend/index"
+  },
+  {
     "name": "login",
     "path": "/login",
     "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\login.vue",
@@ -126,6 +132,18 @@
         "chunkName": "pages/user/fund"
       },
       {
+        "name": "user-invest",
+        "path": "invest",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\invest.vue",
+        "chunkName": "pages/user/invest"
+      },
+      {
+        "name": "user-payment",
+        "path": "payment",
+        "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\payment.vue",
+        "chunkName": "pages/user/payment"
+      },
+      {
         "name": "user-recharge",
         "path": "recharge",
         "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\user\\\\recharge.vue",
@@ -138,6 +156,12 @@
         "chunkName": "pages/user/withdraw"
       }
     ]
+  },
+  {
+    "name": "lend-id",
+    "path": "/lend/:id",
+    "component": "E:\\\\2023-02-19\\\\vue\\\\srb-site-git\\\\pages\\\\lend\\\\_id.vue",
+    "chunkName": "pages/lend/_id"
   },
   {
     "name": "index",
